@@ -12,23 +12,72 @@ h1 { color: blue; }
 </head>
 <body>
  
-    <form action="">
-        <label>nome:
-        <input type="text" name="Senha">
-        
+    <form action="processa.php" method="post">
+        <label>nome:</label>
+  <input type="text"  name="nome">
 
-        <br><br>
+<br><br>
+ 
+<LABEL>EMAIL:</LABEL>
+<input type="email" NAME="EMAIL">
 
-        <label>senha</label>
-        <input type="password" name="senha">
+<BR><BR>
+
+<label>SENHA:</label>
+<input type="password" name="SENHA">
+
+<br><br>
 
 
-        <br><br>
+<label>data de nacimento:</label>
+<input type="date" name="data">
 
-        <label></label>
+   <BR><BR>
+ 
+<label>ESCOLHA SEU GENERO: </label>
+<input type="radio" name="GENERO" value="MASCULINO "> MASCULINO
+<input type="radio" name="GENERO" value="FEMENINO"> FEMENINO
+
+<BR><BR>
+
+    <LABEL>INTERESSE:</LABEL>
+    <input type="checkbox"  name="INTERESSE" value="LER">LER
+    <input type="checkbox"  name="INTERESSE" value="MUSICA">MUSICA
+    <input type="checkbox"  name="INTERESSE" value="PROGRAMAR"> PROGAMAR
+    <input type="checkbox"  name="INTERESSE" value="ESPORTES">ESPORTES
+
+    <BR><BR>
+
+    <label>ESCOLHA UMA LINGUAGEM</label>
+    <select name="LINGUAGEM">
+    <option value="html">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JAVASCRIPT">JAVASCRIPT</option>
+    </select>
 
 
+<BR><BR>
 
+    <label>MENSAGEM</label><BR>
+    <textarea name="MENSAGEM" rows="5" cols="40"</LABEL></textarea>
+
+
+    <BR><BR>
+   
+        <Label>ENVIRA UMA FOTO DE PERFIL </Label>
+        <input type="file" name="ENVIAR UMA FOTO DE PERFIL" value="FOTO">
+      
+        <BR><BR>
+            
+
+        <input type="submit" value="ENVIAR">
+
+        <BR><BR>
+
+        <label> QUAL LINGUA DESEJA APRENDER</label>
+        <input type="radio" name="LINGUAGEM" value="HTML"> HTML
+        <input type="radio" name="LINGUAGEM" value="CSS"> CSS
+        <input type="radio" name="LINGUAGEM" value="TESTE">TESTE
 
 </body>
 
@@ -42,5 +91,3 @@ h1 { color: blue; }
 
 
 
-
-</html>
