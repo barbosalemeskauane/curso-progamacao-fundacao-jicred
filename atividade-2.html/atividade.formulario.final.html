@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro Site</title>
+    <style>
+      body {
+       
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+       
+      }
+    </style>
+  </head>
+  <body>
+    <h1>pata amiga </h1>
+<p>Abrigo comunitário que conecta famílias a animais resgatados da região.</p>
+<h3>Animais aguardando um lar</h3>
+<p>Todos os pets abaixo passaram por avaliação veterinária e estão prontos para adoção. Preencha o cadastro para agendar uma visita de apresentação.</p>
+
+<ul>
+<li>Thor — cachorro adulto, dócil e brincalhão</li>
+<li> Luna — gata jovem, independente e carinhosa</li>
+<li>Pipoca — coelho, tranquilo e de fácil adaptação</li>
+<li> Mel — cachorra idosa, ideal para lares calmos</li>
+</ul>
+
+
+<h2>Cadastro do adotante</h2>
+
+<p>Informe seus dados e preferências com sinceridade. Nossa equipe analisa cada cadastro para garantir o bem-estar do animal e da família.</p>
+   
+
+<h3>Quem vai adotar</h3>
+
+
+ <form action="processa.php" method="post">
+        <label>nome:</label>
+  <input type="text"  name="nome">
+
+  <br><br> 
+
+  <lanel>Email:</lanel>
+  <input type="text" name="nome">
+
+  <br><br>
+
+  <label>Crie uma senha para acompanhar o processo:</label>
+<input type="text " name="nome">
+
+<br><br>
+<label>Telefone (somente números):</label>
+<input type="number" name="Telefone">
+
+<br><br> 
+
+
+ <label>data de nacimento:</label>
+<input type="date" name="data">
+
+
+<br><br>
+
+<label>Tipo de moradia:</label>
+<input type="radio" name="GENERO" value="Apartamento"> Apartamento
+<input type="radio" name="GENERO" value="Casa com quintal"> Casa com quintal
+<input type="radio" name="genero" value=" Sítio ou chácara"> Sítio ou chácara
+
+
+<br><br>
+
+<h3>Preferências de adoção</h3>
+
+
+
+ <label>Porte do animal desejado:</label>
+    <select name="Porte do animal desejado">
+    <option value="pequeno-ate 10kg">pequeno-ate 10kg</option>
+    <option value="medio-de 10 a 25kg">medio-de 10 a 25kg</option>
+    <option value="grande-de 25 a 40kg">grande-de 25 a 40kg</option>
+    <option value="gigante-acima de 40kg">gigante-acima de 40kg</option>
+    </select>
+
+<br><br> 
+
+
+
+<label>Unidade do abrigo para visita</label>
+    <select name="Unidade do abrigo para visita">
+    <option value="unidade-zona-norte">unidade-zona-norte</option>
+    <option value="unidade-zona-sul">unidade-zona-sul</option>
+    <option value="unidade-zona-leste">unidade-zona-leste</option>
+    <option value="unidade-zona-oeste">"unidade-zona-oeste</option>
+    <option value="" ></option>
+</select>
+
+
+
+
+  </body>
+</html>
