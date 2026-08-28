@@ -71,69 +71,156 @@
         font-size: 14px;
       }
 
-      .texto-destaque {
-        color: red;
-        font-weight: bold;
+      .texto-normal {
+        font-size: 16px;
+        color: #3a3d42;
+        margin-bottom: 12px;
       }
 
-      .texto-grande {
-        font-size: 30px;
+      .texto-destaque {
+        font-size: 16px;
+        color: #dc2626;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      .texto-destaque-Centro {
+        font-size: 22px;
+        color: #111827;
         text-align: center;
       }
 
       .caixa-azul {
-        background-color: rgba(80, 80, 218, 0.651);
-        padding: 10px;
-        border: 6px solid blue;
+        background-color: rgb(133, 184, 250);
+        padding: 20px;
+        border: 2px solid blue;
+        margin: 30px;
       }
 
       .caixa-amarela {
-        background-color: yellow;
-        padding: 10px;
-        border: 6px dashed;
+        background-color: rgb(231, 231, 67);
+        padding: 20px;
+        border: 2px dashed;
+        margin: 30px;
       }
 
       .flex-linha {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .flex-coluna {
+        display: flex;
+        flex-direction: column;
         gap: 10px;
       }
 
-      .item-flex {
+      .item-flex.item-vermelho {
+        background-color: rgb(199, 53, 53);
+        color: white;
+        width: 75px;
+        height: 75px;
         display: flex;
-      }
-
-      .item-vermelho {
-        background-color: red;
-        padding: 10px;
-        width: 40px;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
-        font-size: 20px;
-        color: #000000;
       }
 
-      .item-flex {
-      }
-
-      .item-verde {
-        background-color: #366d4a;
-        padding: 10px;
-        width: 40px;
+      .item-flex.item-verde {
+        background-color: rgb(75, 212, 105);
+        color: white;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
-        font-size: 20px;
-        color: #000000;
       }
 
-      .item-flex {
-      }
-
-      .item-azul {
-        background-color: rgb(55, 118, 155);
-        padding: 10px;
-        width: 40px;
+      .item-flex.item-azul {
+        background-color: rgb(53, 116, 199);
+        color: white;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
-        font-size: 20px;
-        color: #000000;
+      }
+
+      .grade {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .item-grade {
+        background-color: rgb(53, 116, 199);
+        color: white;
+        width: 150px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+
+      .bloco-visivel {
+        display: block;
+        background-color: rgb(133, 184, 250);
+        padding: 15px;
+        border: 2px solid blue;
+      }
+
+      .bloco-escondido {
+        display: none;
+        background-color: rgb(133, 184, 250);
+        padding: 20px;
+        border: 2px solid blue;
+        margin: 30px;
+      }
+
+      .barra-fixixa {
+        background-color: rgb(133, 184, 250);
+        padding: 15px;
+        border: 2px solid blue;
+        max-width: 250px;
+        margin-bottom: 10px;
+      }
+
+      .barra-porcentagem {
+        background-color: rgb(107, 255, 119);
+        padding: 15px;
+        border: 2px solid rgb(100, 255, 146);
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .barra-meia {
+        background-color: rgb(221, 255, 100);
+        padding: 15px;
+        border: 2px solid rgb(200, 255, 0);
+        width: 50%;
+      }
+
+      .caixa-posicao {
+        position: relative;
+        width: 600px;
+        margin-top: 20px;
+      }
+
+      .icone-lupa {
+        position: absolute;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .campo-busca {
+        width: 233px;
+        height: 35px;
+        border-radius: 10px;
+        padding: 10px;
       }
     </style>
   </head>
@@ -150,7 +237,7 @@
         <h2 class="topico-titulo">1. Cores e tipografia</h2>
         <p class="texto-normal">Este parágrafo usa a fonte padrão.</p>
         <p class="texto-destaque">Este texto está em negrito e vermelho.</p>
-        <p class="texto-grande">Este texto é maior e centralizado.</p>
+        <p class="texto-destaque-Centro">Este texto é maior e centralizado.</p>
       </section>
 
       <section class="topico">
